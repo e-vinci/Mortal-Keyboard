@@ -31,9 +31,7 @@ const Navbar = () => {
   const isHomePage = window.location.pathname === '/';
 
     // Initializing the navbar with the home link
-  let navbar = `<li><a href="" data-uri="/">Accueil</a></li>
-  <li><a href="#mainMiddleContent">Combattants</a></li>
-  <li><a href="#sectionTreeAcceuil">Arenes</a></li>`;
+  let navbar = `<li><a href="" data-uri="/">Accueil</a></li>`;
 
     // Adding additional links based on the user's authentication status and current page
   if (isConnected) {

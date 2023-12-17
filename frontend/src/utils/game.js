@@ -2,7 +2,7 @@
  
 const getPhraseRandom = async () => {
     try {
-      const response = await fetch(`${process.env.API_BASE_URL}/game`);
+      const response = await fetch('https://mortalkeyboard.azurewebsites.net/game', { mode: 'no-cors' });
   
       if (!response.ok) throw new Error(`fetch error : ${response.status} : ${response.statusText}`);
   
