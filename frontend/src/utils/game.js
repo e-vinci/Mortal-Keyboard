@@ -7,8 +7,7 @@ const getPhraseRandom = async () => {
       if (!response.ok) throw new Error(`fetch error : ${response.status} : ${response.statusText}`);
   
       const phrases = await response.json();
-  
-      // console.table(phrases);
+
   
       const phraseAleatoire = phrases[Math.floor(Math.random() * phrases.length)];
   
